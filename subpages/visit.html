@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About the Fruit</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+  </head>
+
+  <body>
+    <main>
+      <a>
+        <img
+          src="../images/PersimmonLogo.webp"
+          alt=""
+          width="264"
+          height="148"
+        />
+      </a>
+
+      <h1>Come out!</h1>
+      <section aria-label="Where we're at">
+        <div class="slider-container">
+          <div class="slider">
+            <img src="../images/MoonField.jpeg" alt="MLK Day 2024" />
+            <img src="../images/TreeField.jpeg" alt="MLK Day Parade 2024" />
+            <img src="../images/BushyGreen.jpg" alt="MLK Day Parade 2024" />
+          </div>
+        </div>
+
+        <p>
+          Our farm is easy to find - located right on Highway 301, three miles
+          South of Downtown Glennville, Georgia.   This beautiful 175-acre
+          Historic Farm is where we have 20 planted acres of Fuyu Persimmon
+          Fruit Trees and 7 acres of Murray Cypress Christmas Trees.   We
+          encourage our visitors to get out and enjoy the farm.  There is a
+          marked walking trail, a beautiful 6-acre lake, picnic tables, and
+          historic farm buildings.   We also have a gift shop where we sell
+          products made from the persimmon fruit.   We are open seasonal hours. 
+          And, we are also available for group tours, farm visits, presentations
+          about the persimmon fruit, and as a farm venue.
+        </p>
+      </section>
+    </main>
+    <nav>
+      <button onclick="animateBasedOnRotation()">
+        <div class="navCircle"></div>
+        <div class="seeds">
+          <div class="seed seed1"></div>
+          <div class="seed seed2"></div>
+          <div class="seed seed3"></div>
+          <div class="seed seed4"></div>
+          <div class="seed seed5"></div>
+          <div class="seed seed6"></div>
+          <div class="seed seed7"></div>
+          <div class="seed seed8"></div>
+        </div>
+      </button>
+    </nav>
+    <footer>
+      <div
+        style="
+          overflow: hidden;
+          resize: none;
+          max-width: 100%;
+          width: 500px;
+          height: 200px;
+        "
+      >
+        <div
+          id="my-map-canvas"
+          style="height: 100%; width: 100%; max-width: 100%"
+        >
+          <iframe
+            style="height: 100%; width: 100%; border: 0"
+            frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=1559+Lilly+Lane,+Glennville,+GA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          ></iframe>
+        </div>
+        <style>
+          #my-map-canvas img {
+            max-width: none !important;
+            background: none !important;
+            font-size: inherit;
+            font-weight: inherit;
+          }
+        </style>
+      </div>
+      <h3>Follow:</h3>
+      <ul>
+        <li class="instagram">Instagram</li>
+        <li class="facebook">Facebook</li>
+      </ul>
+      <h3>Contact:</h3>
+      <ul>
+        <li class="email">Email</li>
+        <li class="call">Call</li>
+        <li class="text">Text</li>
+        <li class="messenger">Facebook Messenger</li>
+      </ul>
+      <strong>© Sweet Georgia Fuyu Persimmons 2023</strong>
+    </footer>
+  </body>
+</html>

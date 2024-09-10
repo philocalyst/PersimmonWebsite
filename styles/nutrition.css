@@ -1,0 +1,48 @@
+[aria-label="Nutrition Information"] > h3 {
+  font-size: calc(1.5rem + 1vw);
+  font-family: "lora";
+  text-align: center;
+  margin: 0.3rem 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 8vmin;
+}
+
+hr {
+  margin: 4% 0;
+}
+
+[aria-label="Nutrition Information"] > p {
+  margin: 10px;
+}
+
+[aria-label="Nutrition Information"] > img {
+  margin: 2% auto;
+}
+
+[aria-label="Nutrition Information"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 0.5rem;
+  box-shadow:
+    1px 2px 6px 3px rgba(0, 0, 0, 0.2),
+    0 1px 3px rgba(0, 0, 0, 8%);
+  border: 1px solid #c07237;
+  border-radius: 4px;
+}
+
+li {
+  list-style-position: inside;
+  margin: 2% 20px;
+}
+
+b {
+  font-family: "Geologica";
+  font-size: 1.1rem;
+  text-align: start;
+  width: 100%;
+}

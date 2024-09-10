@@ -1,0 +1,39 @@
+[aria-label="About the Fruit"] > h3 {
+  font-family: "lora";
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0.3rem 0;
+}
+
+[aria-label="About the Fruit"] > p {
+  padding: 10px;
+  margin: 0.5rem;
+  box-shadow:
+    1px 2px 6px 3px rgba(0, 0, 0, 0.2),
+    0 1px 3px rgba(0, 0, 0, 8%);
+  border: 1px solid #c07237;
+  border-radius: 4px;
+}
+
+[aria-label="About the Fruit"] > img {
+  margin: 2% auto;
+}
+
+[aria-label="About the Fruit"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure {
+  width: max(50%, 218px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+li {
+  list-style-position: inside;
+  margin: 2% 20px;
+}
