@@ -1,136 +1,152 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Persimmon Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Persimmon Website</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="script" href="nav_events.js" />
+	</head>
 
-  <body>
-    <nav>
-      <ul>
-        <li><a href="subpages/nutrition.html">Nutrition</a></li>
-        <li><a href="subpages/ourStory.html">Our Story</a></li>
-        <li><a href="subpages/about.html">About the Fruit</a></li>
-        <li><a>Locations</a></li>
-        <li><a>Blog</a></li>
-      </ul>
-      <button onclick="display_menu()">
-        <div class="navCircle"></div>
-        <div class="seeds">
-          <div class="seed seed1"></div>
-          <div class="seed seed2"></div>
-          <div class="seed seed3"></div>
-          <div class="seed seed4"></div>
-          <div class="seed seed5"></div>
-          <div class="seed seed6"></div>
-          <div class="seed seed7"></div>
-          <div class="seed seed8"></div>
-        </div>
-        <strong>Menu</strong>
-      </button>
-    </nav>
-    <main>
-      <a>
-        <img src="images/PersimmonLogo.webp" alt="" width="264" height="148" />
-      </a>
-      <section aria-label="Introduction">
-        <h2>Unlike anything you've tasted before!</h2>
-        <img src="images/Persimmon.jpg" />
+	<body>
+		<nav>
+			<ul>
+				<li><a href="subpages/nutrition.html">Nutrition</a></li>
+				<li><a href="subpages/ourStory.html">Our Story</a></li>
+				<li><a href="subpages/about.html">About the Fruit</a></li>
+				<li><a>Locations</a></li>
+				<li><a>Blog</a></li>
+			</ul>
+			<button onclick="display_menu()">
+				<div class="navCircle"></div>
+				<div class="seeds">
+					<div class="seed seed1"></div>
+					<div class="seed seed2"></div>
+					<div class="seed seed3"></div>
+					<div class="seed seed4"></div>
+					<div class="seed seed5"></div>
+					<div class="seed seed6"></div>
+					<div class="seed seed7"></div>
+					<div class="seed seed8"></div>
+				</div>
+				<strong>Menu</strong>
+			</button>
+		</nav>
+		<main>
+			<a href="index.html">
+				<img
+					src="images/PersimmonLogo.webp"
+					alt=""
+					width="264"
+					height="148"
+				/>
+			</a>
+			<section aria-label="Introduction">
+				<h2>Unlike anything you've tasted before!</h2>
+				<img src="images/Persimmon.jpg" />
 
-        <div class="linkWrapper">
-          <a href="subpages/ourStory.html">Shop </a>
-          <a href="subpages/about.html">About</a>
-        </div>
-      </section>
-      <hr />
-      <section aria-label="The Farm">
-        <h2>Grown and harvested locally, on our farm</h2>
-        <div class="imageWrapper">
-          <img src="images/farm.webp" />
-          <a><span>Visit Our Farm</span></a>
-        </div>
-      </section>
-      <hr />
-      <form aria-label="Sign up for Newsletter">
-        <h2>Sign up for News & Announcements</h2>
-        <div id="emailSubmit">
-          <input type="email" id="email" name="email" placeholder="Email" />
-          <input type="submit" id="submit" value="Submit" />
-        </div>
-      </form>
-    </main>
-    <footer>
-      <a
-        href="https://www.google.com/maps/dir//1615+Lilly+Ln,+Glennville,+GA+30427/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88fa923c78391033:0x7ded0a101e2e0f66?ictx=111"
-      >
-        <img
-          src="/Users/philocalyst/Pictures/Screenshots/SCR-20240903-mygp.png"
-        />
-      </a>
-      <div>
-        <h3>Follow</h3>
-        <ul>
-          <li class="instagram">Instagram</li>
-          <li class="facebook">Facebook</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li class="email">Email</li>
-          <li class="call">Call</li>
-          <li class="text">Text</li>
-          <li class="messenger">Facebook Messenger</li>
-        </ul>
-      </div>
-    </footer>
-    <strong>© Sweet Georgia Fuyu Persimmons 2023</strong>
+				<div class="linkWrapper">
+					<a href="subpages/ourStory.html">Shop </a>
+					<a href="subpages/about.html">About</a>
+				</div>
+			</section>
+			<hr />
+			<section aria-label="The Farm">
+				<h2>Grown and harvested locally, on our farm</h2>
+				<div class="imageWrapper">
+					<img src="images/farm.webp" />
+					<a><span>Visit Our Farm</span></a>
+				</div>
+			</section>
+			<hr />
+			<form aria-label="Sign up for Newsletter">
+				<h2>Sign up for News & Announcements</h2>
+				<div id="emailSubmit">
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Email"
+					/>
+					<input type="submit" id="submit" value="Submit" />
+				</div>
+			</form>
+		</main>
+		<footer>
+			<a
+				href="https://www.google.com/maps/dir//1615+Lilly+Ln,+Glennville,+GA+30427/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88fa923c78391033:0x7ded0a101e2e0f66?ictx=111"
+			>
+				<img
+					src="/Users/philocalyst/Pictures/Screenshots/SCR-20240903-mygp.png"
+				/>
+			</a>
+			<div>
+				<h3>Follow</h3>
+				<ul>
+					<li class="instagram">Instagram</li>
+					<li class="facebook">Facebook</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Contact</h3>
+				<ul>
+					<li class="email">Email</li>
+					<li class="call">Call</li>
+					<li class="text">Text</li>
+					<li class="messenger">Facebook Messenger</li>
+				</ul>
+			</div>
+		</footer>
+		<strong>© Sweet Georgia Fuyu Persimmons 2023</strong>
 
-    <script>
-      let toggled = false; // Flag to check if the function has been run before
+		<script>
+			let toggled = false; // Flag to check if the function has been run before
 
-      function display_menu() {
-        var bodyChildren = document.body.children;
+			function display_menu() {
+				var bodyChildren = document.body.children;
 
-        if (!toggled) {
-          // Hide all elements except for 'nav'
-          for (var i = 0; i < bodyChildren.length; i++) {
-            if (bodyChildren[i].tagName.toLowerCase() !== "nav") {
-              bodyChildren[i].style.display = "none";
-            }
-          }
-          document.querySelector("nav > ul").style.display = "inherit";
-          document.querySelectorAll("nav button").forEach((button) => {
-            button.style.opacity = "0";
-          });
-          var navigationLinks = document.querySelectorAll("nav li");
-          for (var i = 0; i < navigationLinks.length; i++) {
-            navigationLinks[i].classList.add("visible");
-          }
-          document.body.style.backgroundColor = "#fde8d9";
-        } else {
-          // Restore all elements to their original display state
-          for (var i = 0; i < bodyChildren.length; i++) {
-            if (bodyChildren[i].tagName.toLowerCase() !== "nav") {
-              bodyChildren[i].style.display = "";
-            }
-          }
-          document.querySelector("nav > ul").style.display = "";
-          document.querySelectorAll("nav button").forEach((button) => {
-            button.style.opacity = "1";
-          });
-          var navigationLinks = document.querySelectorAll("nav li");
-          for (var i = 0; i < navigationLinks.length; i++) {
-            navigationLinks[i].classList.remove("visible");
-          }
-          document.body.style.backgroundColor = "";
-        }
+				if (!toggled) {
+					// Hide all elements except for 'nav'
+					for (var i = 0; i < bodyChildren.length; i++) {
+						if (bodyChildren[i].tagName.toLowerCase() !== "nav") {
+							bodyChildren[i].style.display = "none";
+						}
+					}
+					document.querySelector("nav > ul").style.display =
+						"inherit";
+					document
+						.querySelectorAll("nav button")
+						.forEach((button) => {
+							button.style.opacity = "0";
+						});
+					var navigationLinks = document.querySelectorAll("nav li");
+					for (var i = 0; i < navigationLinks.length; i++) {
+						navigationLinks[i].classList.add("visible");
+					}
+					document.body.style.backgroundColor = "#fde8d9";
+				} else {
+					// Restore all elements to their original display state
+					for (var i = 0; i < bodyChildren.length; i++) {
+						if (bodyChildren[i].tagName.toLowerCase() !== "nav") {
+							bodyChildren[i].style.display = "";
+						}
+					}
+					document.querySelector("nav > ul").style.display = "";
+					document
+						.querySelectorAll("nav button")
+						.forEach((button) => {
+							button.style.opacity = "1";
+						});
+					var navigationLinks = document.querySelectorAll("nav li");
+					for (var i = 0; i < navigationLinks.length; i++) {
+						navigationLinks[i].classList.remove("visible");
+					}
+					document.body.style.backgroundColor = "";
+				}
 
-        toggled = !toggled; // Toggle the flag
-      }
-    </script>
-  </body>
+				toggled = !toggled; // Toggle the flag
+			}
+		</script>
+	</body>
 </html>

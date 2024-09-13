@@ -1,140 +1,188 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nutrition</title>
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../styles/nutrition.css" />
+		<link rel="script" href="../nav_events.js" />
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nutrition</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../styles/nutrition.css" />
-</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="nutrition.html">Nutrition</a></li>
+				<li><a href="ourStory.html">Our Story</a></li>
+				<li><a href="about.html">About the Fruit</a></li>
+				<li><a>Locations</a></li>
+				<li><a>Blog</a></li>
+			</ul>
+			<button onclick="display_menu()">
+				<div class="navCircle"></div>
+				<div class="seeds">
+					<div class="seed seed1"></div>
+					<div class="seed seed2"></div>
+					<div class="seed seed3"></div>
+					<div class="seed seed4"></div>
+					<div class="seed seed5"></div>
+					<div class="seed seed6"></div>
+					<div class="seed seed7"></div>
+					<div class="seed seed8"></div>
+				</div>
+				<strong>Menu</strong>
+			</button>
+		</nav>
+		<main>
+			<a href="../index.html">
+				<img
+					src="images/PersimmonLogo.webp"
+					alt=""
+					width="264"
+					height="148"
+				/>
+			</a>
 
-<body>
-  <main>
-    <a>
-      <img src="../images/PersimmonLogo.webp" alt="" width="264" height="148" />
-    </a>
-
-    <h1>Health and Nutrition Benefits of Persimmons</h1>
-    <hr />
-    <section aria-label="Nutrition Information">
-      <h3>Loaded with important nutrients</h3>
-      <img
-        src="https://i0.wp.com/www.sweetgeorgiafuyupersimmons.com/wp-content/uploads/2021/10/REG2484.jpg?w=600&ssl=1" />
-      <p>
-        Persimmons are also a good source of thiamin (B1), riboflavin (B2),
-        folate, magnesium and phosphorus. These colorful fruits are low in
-        calories and loaded with fiber, making them a weight loss-friendly
-        food. Just one persimmon contains over half the recommended intake of
-        vitamin A. The leaves of the persimmon fruit are also high in vitamin
-        C, tannins and fiber, as well as a common ingredient in therapeutic
-        teas available in our shop.
-      </p>
-      <h3>Antioxidant superfood</h3>
-      <img
-        src="https://i0.wp.com/www.sweetgeorgiafuyupersimmons.com/wp-content/uploads/2021/10/sliced-persimmon.jpg?w=600&ssl=1" />
-      <p>
-        Manganese, B-Complex vitaamins, copper, phosphorus, as well as
-        phytonutrients, flavonoids, and anti-oxidants. Low in calories and
-        fat. Fuyus are an excellent source of fiber. Read more about the
-        nutritional content of Fuyu Persimmons.
-      </p>
-      <h3>Rich in Fiber</h3>
-      <img
-        src="https://i0.wp.com/www.sweetgeorgiafuyupersimmons.com/wp-content/uploads/2021/10/persimmons-table-2.jpg?w=600&ssl=1" />
-      <p>
-        The Fuyu Persimmon Variety originated in Japan where it is regaled as
-        the national fruit. Latin for “food of the gods”, the persimmon has
-        enjoyed enormous popularity worldwide in the culinary world, and in
-        the homes of the American population. Fuyu persimmons add just the
-        right touch of sweet freshness to raw and cooked dishes alike.
-      </p>
-      <h3>Delicious and Easy Addition to Your Diet</h3>
-      <img
-        src="https://i0.wp.com/www.sweetgeorgiafuyupersimmons.com/wp-content/uploads/2021/10/persimmon-tea-drink.jpg?w=450&ssl=1" />
-      <p>
-        Persimmons can be added to a variety of dishes to provide an extra
-        boost of nutrition. These fruits can be enjoyed fresh as a simple
-        snack or used in delicious recipes. In fact, they pair excellently
-        with both sweet and savory foods.
-      </p>
-      <b>Ways to add persimmons to your diet:</b>
-      <ul>
-        <li>Slice persimmons onto a salad for a flavorful addition.</li>
-        <li>
-          Top your morning yogurt or oatmeal with fresh or cooked persimmon
-          for a burst of natural sweetness.
-        </li>
-        <li>
-          Roast persimmons in the oven and drizzle with honey for a tasty and
-          healthy dessert.
-        </li>
-        <li>Mix dried or fresh persimmon into muffin, bread or cake mix.</li>
-        <li>
-          Combine with berries and citrus fruits for a delicious fruit salad.
-        </li>
-        <li>
-          Broil persimmon and serve with baked Brie for a tasty appetizer.
-        </li>
-        <li>
-          Bake persimmons with chicken or meat for a unique flavor
-          combination.
-        </li>
-        <li>Try our refreshing persimmon leaf tea</li>
-      </ul>
-    </section>
-  </main>
-  <nav>
-    <button onclick="animateBasedOnRotation()">
-      <div class="navCircle"></div>
-      <div class="seeds">
-        <div class="seed seed1"></div>
-        <div class="seed seed2"></div>
-        <div class="seed seed3"></div>
-        <div class="seed seed4"></div>
-        <div class="seed seed5"></div>
-        <div class="seed seed6"></div>
-        <div class="seed seed7"></div>
-        <div class="seed seed8"></div>
-      </div>
-    </button>
-  </nav>
-  <footer>
-    <div style="
-          overflow: hidden;
-          resize: none;
-          max-width: 100%;
-          width: 500px;
-          height: 200px;
-        ">
-      <div id="my-map-canvas" style="height: 100%; width: 100%; max-width: 100%">
-        <iframe style="height: 100%; width: 100%; border: 0" frameborder="0"
-          src="https://www.google.com/maps/embed/v1/place?q=1559+Lilly+Lane,+Glennville,+GA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-      </div>
-      <style>
-        #my-map-canvas img {
-          max-width: none !important;
-          background: none !important;
-          font-size: inherit;
-          font-weight: inherit;
-        }
-      </style>
-    </div>
-    <h3>Follow</h3>
-    <ul>
-      <li class="instagram">Instagram</li>
-      <li class="facebook">Facebook</li>
-    </ul>
-    <h3>Contact</h3>
-    <ul>
-      <li class="email">Email</li>
-      <li class="call">Call</li>
-      <li class="text">Text</li>
-      <li class="messenger">Facebook Messenger</li>
-    </ul>
-    <strong>© Sweet Georgia Fuyu Persimmons 2023</strong>
-  </footer>
-</body>
-
+			<h1>Health and Nutrition Benefits of Persimmons</h1>
+			<hr />
+			<section aria-label="Nutrition Information">
+				<h3>Loaded with important nutrients</h3>
+				<img
+					src="https://i0.wp.com/www.sweetgeorgiafuyupersimmons.com/wp-content/uploads/2021/10/REG2484.jpg?w=600&ssl=1"
+				/>
+				<p>
+					Persimmons are also a good source of thiamin (B1),
+					riboflavin (B2), folate, magnesium and phosphorus. These
+					colorful fruits are low in calories and loaded with fiber,
+					making them a weight loss-friendly food. Just one persimmon
+					contains over half the recommended intake of vitamin A. The
+					leaves of the persimmon fruit are also high in vitamin C,
+					tannins and fiber, as well as a common ingredient in
+					therapeutic teas available in our shop.
+				</p>
+				<h3>Antioxidant superfood</h3>
+				<img
+					src="https://i0.wp.com/www.sweetgeorgiafuyupersimmons.com/wp-content/uploads/2021/10/sliced-persimmon.jpg?w=600&ssl=1"
+				/>
+				<p>
+					Manganese, B-Complex vitaamins, copper, phosphorus, as well
+					as phytonutrients, flavonoids, and anti-oxidants. Low in
+					calories and fat. Fuyus are an excellent source of fiber.
+					Read more about the nutritional content of Fuyu Persimmons.
+				</p>
+				<h3>Rich in Fiber</h3>
+				<img
+					src="https://i0.wp.com/www.sweetgeorgiafuyupersimmons.com/wp-content/uploads/2021/10/persimmons-table-2.jpg?w=600&ssl=1"
+				/>
+				<p>
+					The Fuyu Persimmon Variety originated in Japan where it is
+					regaled as the national fruit. Latin for “food of the gods”,
+					the persimmon has enjoyed enormous popularity worldwide in
+					the culinary world, and in the homes of the American
+					population. Fuyu persimmons add just the right touch of
+					sweet freshness to raw and cooked dishes alike.
+				</p>
+				<h3>Delicious and Easy Addition to Your Diet</h3>
+				<img
+					src="https://i0.wp.com/www.sweetgeorgiafuyupersimmons.com/wp-content/uploads/2021/10/persimmon-tea-drink.jpg?w=450&ssl=1"
+				/>
+				<p>
+					Persimmons can be added to a variety of dishes to provide an
+					extra boost of nutrition. These fruits can be enjoyed fresh
+					as a simple snack or used in delicious recipes. In fact,
+					they pair excellently with both sweet and savory foods.
+				</p>
+				<b>Ways to add persimmons to your diet:</b>
+				<ul>
+					<li>
+						Slice persimmons onto a salad for a flavorful addition.
+					</li>
+					<li>
+						Top your morning yogurt or oatmeal with fresh or cooked
+						persimmon for a burst of natural sweetness.
+					</li>
+					<li>
+						Roast persimmons in the oven and drizzle with honey for
+						a tasty and healthy dessert.
+					</li>
+					<li>
+						Mix dried or fresh persimmon into muffin, bread or cake
+						mix.
+					</li>
+					<li>
+						Combine with berries and citrus fruits for a delicious
+						fruit salad.
+					</li>
+					<li>
+						Broil persimmon and serve with baked Brie for a tasty
+						appetizer.
+					</li>
+					<li>
+						Bake persimmons with chicken or meat for a unique flavor
+						combination.
+					</li>
+					<li>Try our refreshing persimmon leaf tea</li>
+				</ul>
+			</section>
+		</main>
+		<nav>
+			<button onclick="animateBasedOnRotation()">
+				<div class="navCircle"></div>
+				<div class="seeds">
+					<div class="seed seed1"></div>
+					<div class="seed seed2"></div>
+					<div class="seed seed3"></div>
+					<div class="seed seed4"></div>
+					<div class="seed seed5"></div>
+					<div class="seed seed6"></div>
+					<div class="seed seed7"></div>
+					<div class="seed seed8"></div>
+				</div>
+			</button>
+		</nav>
+		<footer>
+			<div
+				style="
+					overflow: hidden;
+					resize: none;
+					max-width: 100%;
+					width: 500px;
+					height: 200px;
+				"
+			>
+				<div
+					id="my-map-canvas"
+					style="height: 100%; width: 100%; max-width: 100%"
+				>
+					<iframe
+						style="height: 100%; width: 100%; border: 0"
+						frameborder="0"
+						src="https://www.google.com/maps/embed/v1/place?q=1559+Lilly+Lane,+Glennville,+GA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+					></iframe>
+				</div>
+				<style>
+					#my-map-canvas img {
+						max-width: none !important;
+						background: none !important;
+						font-size: inherit;
+						font-weight: inherit;
+					}
+				</style>
+			</div>
+			<h3>Follow</h3>
+			<ul>
+				<li class="instagram">Instagram</li>
+				<li class="facebook">Facebook</li>
+			</ul>
+			<h3>Contact</h3>
+			<ul>
+				<li class="email">Email</li>
+				<li class="call">Call</li>
+				<li class="text">Text</li>
+				<li class="messenger">Facebook Messenger</li>
+			</ul>
+			<strong>© Sweet Georgia Fuyu Persimmons 2023</strong>
+		</footer>
+	</body>
 </html>
