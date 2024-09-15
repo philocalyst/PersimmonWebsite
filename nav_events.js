@@ -7,13 +7,10 @@ function display_menu() {
 		// Hide all elements except for 'nav'
 		for (var i = 0; i < bodyChildren.length; i++) {
 			if (bodyChildren[i].tagName.toLowerCase() !== "nav") {
-				bodyChildren[i].style.display = "none";
+				bodyChildren[i].style.opacity = "0";
 			}
 		}
 		document.querySelector("nav > ul").style.display = "inherit";
-		document.querySelectorAll("nav button").forEach((button) => {
-			button.style.opacity = "0";
-		});
 		var navigationLinks = document.querySelectorAll("nav li");
 		for (var i = 0; i < navigationLinks.length; i++) {
 			navigationLinks[i].classList.add("visible");
@@ -23,7 +20,7 @@ function display_menu() {
 		// Restore all elements to their original display state
 		for (var i = 0; i < bodyChildren.length; i++) {
 			if (bodyChildren[i].tagName.toLowerCase() !== "nav") {
-				bodyChildren[i].style.display = "";
+				bodyChildren[i].style.opacity = "1";
 			}
 		}
 		document.querySelector("nav > ul").style.display = "";
