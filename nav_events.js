@@ -8,6 +8,7 @@ function display_menu() {
 		for (var i = 0; i < bodyChildren.length; i++) {
 			if (bodyChildren[i].tagName.toLowerCase() !== "nav") {
 				bodyChildren[i].style.opacity = "0";
+				bodyChildren[i].style.display = "none";
 			}
 		}
 		document.querySelector("nav > ul").style.display = "inherit";

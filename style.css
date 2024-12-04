@@ -387,6 +387,7 @@ nav button {
 }
 
 nav > ul {
+	z-index: 1000;
 	display: none;
 	width: 100%;
 	position: fixed;
