@@ -22,6 +22,7 @@ function display_menu() {
 		for (var i = 0; i < bodyChildren.length; i++) {
 			if (bodyChildren[i].tagName.toLowerCase() !== "nav") {
 				bodyChildren[i].style.opacity = "1";
+				bodyChildren[i].style.display = "inherit";
 			}
 		}
 		document.querySelector("nav > ul").style.display = "";
