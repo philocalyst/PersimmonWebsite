@@ -81,7 +81,7 @@ main > a img {
 	transform: translate(-50%, 0);
 	width: min(72%, 520px);
 	height: auto;
-	margin-top: -22%;
+	margin-top: -20%;
 	margin-bottom: 3%;
 	border: none;
 }
@@ -271,8 +271,8 @@ nav button {
 	background: radial-gradient(circle, rgb(233, 173, 128), rgb(221, 118, 40));
 	z-index: 170;
 	margin: 0 auto;
-	width: calc(32vmin - 5vw);
-	height: calc(32vmin - 5vw);
+	width: calc(32vmin - 7vw);
+	height: calc(32vmin - 7vw);
 	position: fixed;
 	border-radius: 50%;
 	bottom: 5vmin;
