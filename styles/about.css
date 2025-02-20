@@ -16,42 +16,47 @@
 }
 
 .slider-container {
-	border: solid 2px #c07237;
-	border-radius: 4px;
-	width: 70%;
-	margin: 0 auto;
-	overflow: hidden;
+  border: solid 2px #c07237;
+  border-radius: 4px;
+  width: max(40%, calc(120% - 45vw));
+  margin: 0 auto;
+  overflow: hidden;
+  /* Consider setting a fixed aspect ratio or height if needed */
 }
 
 .slider {
-	display: flex;
-	width: 300%;
-	/* 100% * number of images */
-	animation: slide 12s infinite;
+  display: flex;
+  width: 300%;
+  animation: slide 12s infinite;
 }
 
 .slider img {
-	margin: 0;
-	width: 33.34%;
-	height: auto;
-	object-fit: contain;
+  margin: 0;
+  width: 100%; /* Changed to 100% width of slider item, not 33.34% of whole slider */
+  height: auto;
+  object-fit: cover; /* Changed to cover */
+  display: block; /* Add display: block to remove potential bottom spacing */
 }
 
 @keyframes slide {
-	0%,
-	33.33% {
-		transform: translateX(0);
-	}
-
-	33.34%,
-	66.66% {
-		transform: translateX(-33.33%);
-	}
-
-	66.67%,
-	100% {
-		transform: translateX(-66.66%);
-	}
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(0); /* Pause at image 1 */
+  }
+  35% {
+    transform: translateX(-33.33%); /* Quick transition to image 2 */
+  }
+  65% {
+    transform: translateX(-33.33%); /* Pause at image 2 */
+  }
+  70% {
+    transform: translateX(-66.66%); /* Quick transition to image 3 */
+  }
+  100% {
+    transform: translateX(-66.66%); /* Pause at image 3 */
+  }
 }
 
 [aria-label="About the Fruit"],
