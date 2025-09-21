@@ -1,78 +1,85 @@
 [aria-label="About the Fruit"],
-[aria-label="Where we're at"] > h3 {
-	font-family: "lora";
-	text-align: center;
-	margin: 0.3rem 0;
+[aria-label="Where we're at"]>h3 {
+  font-family: "lora";
+  text-align: center;
+  margin: 0.3rem 0;
 }
 
 [aria-label="About the Fruit"],
-[aria-label="Where we're at"] > p {
-	margin: 10px;
+[aria-label="Where we're at"]>p {
+  margin: 10px;
 }
 
 [aria-label="About the Fruit"],
-[aria-label="Where we're at"] > img {
-	margin: 2% auto;
+[aria-label="Where we're at"]>img {
+  margin: 2% auto;
 }
 
 .slider-container {
   border: solid 2px #c07237;
   border-radius: 4px;
   width: max(40%, calc(120% - 45vw));
+  height: 25vh;
+  /* 25% of viewport height - adjust as needed */
   margin: 0 auto;
   overflow: hidden;
-  /* Consider setting a fixed aspect ratio or height if needed */
 }
 
 .slider {
   display: flex;
   width: 300%;
+  height: 100%;
   animation: slide 12s infinite;
 }
 
 .slider img {
   margin: 0;
-  width: 100%; /* Changed to 100% width of slider item, not 33.34% of whole slider */
-  height: auto;
-  object-fit: cover; /* Changed to cover */
-  display: block; /* Add display: block to remove potential bottom spacing */
+  width: 33.333%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 @keyframes slide {
   0% {
     transform: translateX(0);
   }
+
   30% {
-    transform: translateX(0); /* Pause at image 1 */
+    transform: translateX(0);
   }
+
   35% {
-    transform: translateX(-33.33%); /* Quick transition to image 2 */
+    transform: translateX(-33.33%);
   }
+
   65% {
-    transform: translateX(-33.33%); /* Pause at image 2 */
+    transform: translateX(-33.33%);
   }
+
   70% {
-    transform: translateX(-66.66%); /* Quick transition to image 3 */
+    transform: translateX(-66.66%);
   }
+
   100% {
-    transform: translateX(-66.66%); /* Pause at image 3 */
+    transform: translateX(-66.66%);
   }
 }
 
 [aria-label="About the Fruit"],
 [aria-label="Where we're at"] {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 10px;
-	margin: 0.5rem;
-	box-shadow:
-		1px 2px 6px 3px rgba(0, 0, 0, 0.2),
-		0 1px 3px rgba(0, 0, 0, 8%);
-	border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 0.5rem;
+  box-shadow:
+    1px 2px 6px 3px rgba(0, 0, 0, 0.2),
+    0 1px 3px rgba(0, 0, 0, 8%);
+  border-radius: 4px;
 }
 
 li {
-	list-style-position: inside;
-	margin: 2% 20px;
+  list-style-position: inside;
+  margin: 2% 20px;
 }
