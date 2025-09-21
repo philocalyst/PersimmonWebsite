@@ -1,118 +1,101 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Persimmon Website</title>
-		<link rel="stylesheet" href="style.css" />
-		<script src="nav_events.js" defer></script>
-	</head>
 
-	<body>
-		<nav>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Persimmon Website</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="nav_events.js" defer></script>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li>
+				<a href="https://shop.sweetgeorgiafuyupersimmons.com/">Store</a>
+			</li>
+			<li><a href="subpages/visit.html">Come out</a></li>
+			<li><a href="subpages/nutrition.html">Nutrition</a></li>
+			<li><a href="subpages/ourStory.html">Our Story</a></li>
+			<li><a href="subpages/about.html">About the Fruit</a></li>
+		</ul>
+		<button onclick="display_menu()">
+			<div class="navCircle"></div>
+			<div class="seeds">
+				<div class="seed seed1"></div>
+				<div class="seed seed2"></div>
+				<div class="seed seed3"></div>
+				<div class="seed seed4"></div>
+				<div class="seed seed5"></div>
+				<div class="seed seed6"></div>
+				<div class="seed seed7"></div>
+				<div class="seed seed8"></div>
+			</div>
+			<strong>Menu</strong>
+		</button>
+	</nav>
+	<main>
+		<a href="index.html">
+			<img src="images/PersimmonLogo.webp" alt="" width="264" height="148">
+		</a>
+		<section aria-label="Introduction">
+			<h2>Unlike anything you've tasted before!</h2>
+			<img src="images/Persimmon.webp">
+
+			<div class="linkWrapper">
+				<a href="https://shop.sweetgeorgiafuyupersimmons.com/">Shop
+				</a>
+				<a href="subpages/about.html">About</a>
+			</div>
+		</section>
+		<hr>
+		<section aria-label="The Farm">
+			<h2>Grown and harvested locally, on our farm</h2>
+			<div class="imageWrapper">
+				<img src="images/farm.webp">
+				<a href="subpages/visit.html"><span>Visit Our Farm</span></a>
+			</div>
+			<hr>
+		</section>
+		<section aria-label="Distributors">
+			<h2>Find our products at a store near you!</h2>
+			<div class="imageWrapper">
+				<img src="images/tractor_sole.webp">
+				<a href="subpages/stores.html"><span>Retail Store Partners</span></a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<a
+			href="https://www.google.com/maps/dir//1615+Lilly+Ln,+Glennville,+GA+30427/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88fa923c78391033:0x7ded0a101e2e0f66?ictx=111">
+			<img src="images/farm_map.webp">
+		</a>
+		<div>
+			<h3>Follow</h3>
 			<ul>
-				<li>
-					<a href="https://shop.sweetgeorgiafuyupersimmons.com/"
-						>Store</a
-					>
-				</li>
-				<li><a href="subpages/visit.html">Come out</a></li>
-				<li><a href="subpages/nutrition.html">Nutrition</a></li>
-				<li><a href="subpages/ourStory.html">Our Story</a></li>
-				<li><a href="subpages/about.html">About the Fruit</a></li>
+				<a href="https://www.instagram.com/sweetgeorgiafuyupersimmons/?hl=en">
+					<li class="instagram">Instagram</li>
+				</a>
+				<a href="https://www.facebook.com/SweetGeorgiaFuyuPersimmon/">
+					<li class="facebook">Facebook</li>
+				</a>
 			</ul>
-			<button onclick="display_menu()">
-				<div class="navCircle"></div>
-				<div class="seeds">
-					<div class="seed seed1"></div>
-					<div class="seed seed2"></div>
-					<div class="seed seed3"></div>
-					<div class="seed seed4"></div>
-					<div class="seed seed5"></div>
-					<div class="seed seed6"></div>
-					<div class="seed seed7"></div>
-					<div class="seed seed8"></div>
-				</div>
-				<strong>Menu</strong>
-			</button>
-		</nav>
-		<main>
-			<a href="index.html">
-				<img
-					src="images/PersimmonLogo.webp"
-					alt=""
-					width="264"
-					height="148"
-				/>
-			</a>
-			<section aria-label="Introduction">
-				<h2>Unlike anything you've tasted before!</h2>
-				<img src="images/Persimmon.webp" />
+		</div>
+		<div>
+			<h3>Contact</h3>
+			<ul>
+				<li class="email">
+					<a href="mailto:sweetgeorgiafuyu@gmail.com">Email</a>
+				</li>
+				<li class="messenger">
+					<a href="https://m.me/SweetGeorgiaFuyuPersimmon/">Facebook Messenger</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<strong>© Sweet Georgia Fuyu Persimmons 2023</strong>
+</body>
 
-				<div class="linkWrapper">
-					<a href="https://shop.sweetgeorgiafuyupersimmons.com/"
-						>Shop
-					</a>
-					<a href="subpages/about.html">About</a>
-				</div>
-			</section>
-			<hr />
-			<section aria-label="The Farm">
-				<h2>Grown and harvested locally, on our farm</h2>
-				<div class="imageWrapper">
-					<img src="images/farm.webp" />
-					<a href="subpages/visit.html"
-						><span>Visit Our Farm</span></a
-					>
-				</div>
-				<hr />
-			</section>
-						<section aria-label="Distributors">
-				<h2>Find our products at a store near you!</h2>
-				<div class="imageWrapper">
-					<img src="images/tractor_sole.webp" />
-					<a href="subpages/stores.html"
-						><span>Stop by!</span></a
-					>
-				</div>
-			</section>
-		</main>
-		<footer>
-			<a
-				href="https://www.google.com/maps/dir//1615+Lilly+Ln,+Glennville,+GA+30427/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88fa923c78391033:0x7ded0a101e2e0f66?ictx=111"
-			>
-				<img src="images/farm_map.webp" />
-			</a>
-			<div>
-				<h3>Follow</h3>
-				<ul>
-					<a
-						href="https://www.instagram.com/sweetgeorgiafuyupersimmons/?hl=en"
-					>
-						<li class="instagram">Instagram</li>
-					</a>
-					<a
-						href="https://www.facebook.com/SweetGeorgiaFuyuPersimmon/"
-					>
-						<li class="facebook">Facebook</li>
-					</a>
-				</ul>
-			</div>
-			<div>
-				<h3>Contact</h3>
-				<ul>
-					<li class="email">
-						<a href="mailto:sweetgeorgiafuyu@gmail.com">Email</a>
-					</li>
-					<li class="messenger">
-						<a href="https://m.me/SweetGeorgiaFuyuPersimmon/"
-							>Facebook Messenger</a
-						>
-					</li>
-				</ul>
-			</div>
-		</footer>
-		<strong>© Sweet Georgia Fuyu Persimmons 2023</strong>
-	</body>
 </html>
