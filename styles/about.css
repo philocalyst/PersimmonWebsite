@@ -18,9 +18,8 @@
 .slider-container {
   border: solid 2px #c07237;
   border-radius: 4px;
-  width: max(40%, calc(120% - 45vw));
-  height: 25vh;
-  /* 25% of viewport height - adjust as needed */
+  width: max(50%, calc(140% - 45vw));
+  height: 35vh;
   margin: 0 auto;
   overflow: hidden;
 }
