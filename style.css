@@ -36,13 +36,13 @@ img {
 	width: 100%;
 }
 
-footer :not(li) > a {
+footer :not(li)>a {
 	all: unset;
 }
 
 h2,
 h1,
-nav > ul > li {
+nav>ul>li {
 	margin: 0 1vmin;
 	font-family: "lora";
 	font-weight: 900;
@@ -59,12 +59,12 @@ footer img {
 	margin: auto 0;
 }
 
-footer > a {
+footer>a {
 	all: unset !important;
 	width: max(80vmin, 50%) !important;
 }
 
-button > strong {
+button>strong {
 	filter: drop-shadow(0 0 0.5rem #fff);
 	position: absolute;
 	font-size: 5vmin;
@@ -74,7 +74,7 @@ button > strong {
 	bottom: -1.1em;
 }
 
-main > a img {
+main>a img {
 	all: unset;
 	position: relative;
 	left: 50%;
@@ -86,7 +86,7 @@ main > a img {
 	border: none;
 }
 
-main > a {
+main>a {
 	all: unset !important;
 }
 
@@ -163,7 +163,7 @@ main > a {
 }
 
 main,
-main > a img,
+main>a img,
 footer,
 hr {
 	filter: drop-shadow(0px 0px 20px #00000045);
@@ -175,6 +175,10 @@ main {
 	border-radius: 5px;
 	margin: 25vh auto 0 auto;
 	border: solid 2px #f48f40;
+}
+
+section h2 a {
+	font-size: clamp(2rem, 16vw - 8vh, 2.5rem);
 }
 
 [aria-label="Introduction"] img,
@@ -203,7 +207,7 @@ a {
 	color: unset;
 }
 
-:not(li) > a {
+:not(li)>a {
 	width: 100%;
 	text-align: center;
 	background-color: rgba(157, 149, 82, 0.8);
@@ -229,7 +233,7 @@ a {
 	position: relative;
 }
 
-#emailSubmit > * {
+#emailSubmit>* {
 	padding: 0.25em 1em;
 	font-size: clamp(1.4rem, 16vw - 8vh, 2rem);
 	border-radius: 10px;
@@ -386,7 +390,7 @@ nav button {
 	transform-origin: -30%;
 }
 
-nav > ul {
+nav>ul {
 	z-index: 1000;
 	display: none;
 	width: 100%;
@@ -396,12 +400,12 @@ nav > ul {
 	transform: translate(-50%, -50%);
 }
 
-nav > ul > li {
+nav>ul>li {
 	transition: transform 1s ease-in-out;
 	opacity: 0;
 }
 
-nav > ul .visible {
+nav>ul .visible {
 	display: inherit;
 }
 
@@ -434,7 +438,7 @@ footer strong {
 	margin: 0.5rem auto;
 }
 
-footer > div {
+footer>div {
 	margin: 0 1% 1% 0;
 }
 
@@ -465,7 +469,7 @@ h3 {
 	font-size: var(--step-3);
 }
 
-a > span::after {
+a>span::after {
 	position: absolute;
 	content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="33" height="33" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>');
 }
