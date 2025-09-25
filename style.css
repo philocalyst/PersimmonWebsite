@@ -208,8 +208,8 @@ a {
 }
 
 :not(li)>a {
-	width: 100%;
 	text-align: center;
+	display: block;
 	background-color: rgba(157, 149, 82, 0.8);
 	padding: 0.25rem 1rem;
 	font-size: clamp(1.4rem, 16vw - 8vh, 2rem);
