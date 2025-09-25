@@ -81,7 +81,7 @@ main>a img {
 	transform: translate(-50%, 0);
 	width: min(72%, 520px);
 	height: auto;
-	margin-top: -20%;
+	margin-top: -16%;
 	margin-bottom: 3%;
 	border: none;
 }
@@ -173,7 +173,7 @@ main {
 	width: clamp(0px, 100%, 1000px);
 	background-color: #f6a666;
 	border-radius: 5px;
-	margin: 25vh auto 0 auto;
+	margin: 20% auto 0 auto;
 	border: solid 2px #f48f40;
 }
 
