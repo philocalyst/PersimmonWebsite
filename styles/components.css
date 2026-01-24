@@ -546,6 +546,12 @@
     justify-content: space-between;
     filter: drop-shadow(0px 0px 20px oklch(0% 0 0 / 0.25));
 
+    .messenger,
+    .email {
+      color: var(--color-farm-text) !important;
+    }
+
+
     &:first-child {
       margin-bottom: 10px;
       border-radius: 10px;
@@ -580,10 +586,11 @@
       margin: 0 1% 1% 0;
     }
 
+
     li {
       list-style: none;
       margin: 0.55rem 1.6rem;
-      color: rgb(34, 33, 33);
+      color: var(--color-farm-text);
       font-size: calc(1rem + 1vw);
     }
   }

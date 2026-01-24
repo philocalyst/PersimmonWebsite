@@ -60,6 +60,7 @@
 		/* Global Mapping to System Variables */
 		--color-surface: var(--color-farm-bg);
 		--color-text: var(--color-farm-text);
+		--color-link-text: var(--color-farm-text);
 	}
 
 	/* Dark Mode Inversion Logic */
@@ -85,6 +86,7 @@
 
 			--color-surface: var(--color-farm-bg);
 			--color-text: var(--color-farm-text);
+			--color-link-text: var(--color-farm-beige);
 		}
 	}
 }

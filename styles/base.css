@@ -64,9 +64,13 @@
     font-size: 1.1rem;
   }
 
+  footer a {
+    color: var(--color-farm-text);
+  }
+
   a {
     text-decoration: none;
-    color: unset;
+    color: var(--color-link-text);
   }
 
   li {
