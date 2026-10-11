@@ -84,6 +84,73 @@
     }
   }
 
+  /*
+     Seasonal Hours Card
+  */
+  .hours {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 520px;
+    margin: 0.75rem auto 0;
+  }
+
+  .hoursBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    min-width: 0;
+    padding: 0.9rem 0.75rem 1rem;
+    background-color: oklch(from var(--color-farm-beige) l c h / 0.35);
+    border: solid 2px var(--color-farm-brown);
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .hoursDays {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-farm-text);
+    white-space: nowrap;
+  }
+
+  .hoursTime {
+    font-family: var(--font-heading);
+    font-size: var(--step-2);
+    line-height: 1.1;
+    color: var(--color-farm-text);
+    white-space: nowrap;
+  }
+
+  .hoursNotes {
+    max-width: 640px;
+    margin: 1rem 0.75rem 0;
+    text-align: center;
+    font-size: var(--step--1);
+    line-height: 1.65;
+    color: var(--color-farm-text);
+  }
+
+  /* Inline contact links (avoid the big button styling) */
+  .contactLink {
+    display: inline;
+    text-align: inherit;
+    background: none;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    font-size: inherit;
+    font-family: var(--font-mono);
+    color: var(--color-farm-text);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
   /* 
      Section Typography Overrides 
   */
@@ -93,6 +160,7 @@
 
   [aria-label="About the Fruit"]>h3,
   [aria-label="Where we're at"]>h3,
+  [aria-label="The Farm"]>h3,
   [aria-label="About the Fruit"]>h3 {
     font-family: var(--font-heading);
     text-align: center;
